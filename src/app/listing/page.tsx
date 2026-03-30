@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Aman Suria Bungalow — RM6.5M Freehold | Owner Direct Sale",
   description:
-    "Premium freehold bungalow in Aman Suria Damansara, PJ. 6,200+ sqft land, 5+1 bed, fully furnished. MM2H & PVIP eligible. No agent commission — buy direct from owner.",
+    "Premium freehold bungalow in Aman Suria Damansara, PJ. 6,200+ sqft land, 5+1 bed, fully furnished. No agent commission — buy direct from owner.",
 };
 
 const galleryItems = [
@@ -463,9 +463,8 @@ export default function ListingPage() {
               listed price IS your price.
             </p>
             <p className="text-sm leading-relaxed text-muted">
-              <strong className="text-foreground">MM2H &amp; PVIP eligible</strong> &mdash;
-              this freehold bungalow qualifies for foreign ownership under Malaysia My Second Home
-              and Premium Visa programmes.
+              <strong className="text-foreground">High rental demand from MM2H &amp; PVIP holders</strong> &mdash;
+              premium G&amp;G freehold bungalows in PJ are sought-after by visa programme participants seeking quality homes.
             </p>
           </div>
         </div>
