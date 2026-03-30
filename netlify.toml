@@ -1,0 +1,4 @@
+[build]
+  base = "amansuria-landing"
+  command = "npm run build"
+  publish = "out"
