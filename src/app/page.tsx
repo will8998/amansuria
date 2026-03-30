@@ -660,8 +660,8 @@ export default function Home() {
               },
               {
                 num: "04",
-                title: "Video Walkthrough + Matterport 3D",
-                desc: "Cinematic video + interactive 3D virtual tour. Buyers explore the property remotely before booking a viewing.",
+                title: "Video Walkthrough + AI Virtual Staging",
+                desc: "Cinematic video + AI-powered virtual staging to showcase the property with modern, aspirational interiors. Buyers see the home\u2019s full potential before visiting.",
               },
               {
                 num: "05",
@@ -1104,7 +1104,7 @@ export default function Home() {
               {
                 week: "W1",
                 title: "Content",
-                desc: "Photos, video, Matterport 3D scan, website goes live.",
+                desc: "Photos, video, AI virtual staging of all rooms, website goes live.",
               },
               {
                 week: "W2",
