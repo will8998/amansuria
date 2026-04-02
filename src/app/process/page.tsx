@@ -168,56 +168,6 @@ const rpgtRates = [
   },
 ];
 
-const stampDutyRates = [
-  { band: "First RM100,000", rate: "1%" },
-  { band: "RM100,001 \u2013 RM500,000", rate: "2%" },
-  { band: "RM500,001 \u2013 RM1,000,000", rate: "3%" },
-  { band: "Above RM1,000,000", rate: "4%" },
-];
-
-const timelineOverview = [
-  {
-    week: "W0\u20132",
-    title: "Preparation",
-    desc: "Engage lawyer, prepare marketing materials, property staging.",
-  },
-  {
-    week: "W2\u201312",
-    title: "Marketing & Viewings",
-    desc: "Portal listings, social media campaigns, open houses, buyer screening.",
-  },
-  {
-    week: "W12\u201314",
-    title: "Buyer Found",
-    desc: "OTP signed, earnest deposit received (2\u20133%).",
-  },
-  {
-    week: "W14\u201318",
-    title: "SPA Stage",
-    desc: "SPA drafted, reviewed, negotiated, and signed by both parties.",
-  },
-  {
-    week: "W18\u201330",
-    title: "Loan & RPGT",
-    desc: "Buyer\u2019s loan processing + RPGT filing within 60 days of SPA.",
-  },
-  {
-    week: "W30\u201334",
-    title: "Completion",
-    desc: "Loan approved, balance paid, seller\u2019s bank redeemed.",
-  },
-  {
-    week: "W34\u201340",
-    title: "Transfer",
-    desc: "MOT stamped, title transfer lodged at Land Office.",
-  },
-  {
-    week: "W40\u201360+",
-    title: "Registration",
-    desc: "Title registered under buyer\u2019s name. Transaction complete.",
-  },
-];
-
 const legalReferences = [
   {
     topic: "SPA drafting",
@@ -350,9 +300,7 @@ export default function ProcessPage() {
           </p>
 
           <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            How a Property Sale
-            <br />
-            <span className="text-gold">Works in Malaysia</span>
+            <span className="text-gold">The Process</span>
           </h1>
 
           <p className="mx-auto mb-6 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
@@ -830,100 +778,7 @@ export default function ProcessPage() {
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 8 — STAMP DUTY                       */}
-      {/* ============================================ */}
-      <section className="border-t border-border-subtle px-6 py-24">
-        <div className="mx-auto max-w-4xl">
-          <p className="mb-3 text-xs font-medium tracking-[0.3em] uppercase text-gold-dim">
-            Stamp Duty
-          </p>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            Stamp Duty &mdash; Who Pays What
-          </h2>
-          <p className="mb-12 max-w-2xl text-base leading-relaxed text-muted">
-            Stamp duty on the Memorandum of Transfer (MOT). Paid by the{" "}
-            <strong className="text-foreground">buyer</strong>, not the seller.
-          </p>
-
-          <div className="mb-8 overflow-x-auto rounded-lg border border-border-subtle">
-            <table className="w-full text-left text-sm">
-              <thead>
-                <tr className="border-b border-border-subtle bg-surface-elevated">
-                  <th className="px-4 py-3.5 font-medium text-muted">
-                    Property Value
-                  </th>
-                  <th className="px-4 py-3.5 text-right font-medium text-muted">
-                    Rate
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border-subtle">
-                {stampDutyRates.map((row, i) => (
-                  <tr
-                    key={i}
-                    className="bg-surface transition-colors hover:bg-surface-elevated"
-                  >
-                    <td className="px-4 py-3.5 text-foreground">{row.band}</td>
-                    <td className="px-4 py-3.5 text-right font-mono text-gold">
-                      {row.rate}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <div className="space-y-3">
-            <div className="flex items-start gap-3.5 rounded-lg border border-border-subtle bg-surface px-5 py-4">
-              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs text-gold">
-                ✓
-              </span>
-              <p className="text-sm leading-relaxed text-foreground/85">
-                Stamp duty is paid by the{" "}
-                <strong className="text-foreground">buyer</strong>, not the
-                seller. Rates are tiered (marginal), not flat.
-              </p>
-            </div>
-            <div className="flex items-start gap-3.5 rounded-lg border border-border-subtle bg-surface px-5 py-4">
-              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs text-gold">
-                ✓
-              </span>
-              <p className="text-sm leading-relaxed text-foreground/85">
-                Loan agreement stamp duty: flat{" "}
-                <strong className="text-foreground">0.5%</strong> of total loan
-                amount.
-              </p>
-            </div>
-            <div className="flex items-start gap-3.5 rounded-lg border border-border-subtle bg-surface px-5 py-4">
-              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs text-gold">
-                ✓
-              </span>
-              <p className="text-sm leading-relaxed text-foreground/85">
-                First-time buyer exemption: 100% stamp duty exemption for
-                properties up to RM500,000 (extended to 31 Dec 2027 under Budget
-                2026).
-              </p>
-            </div>
-            <div className="flex items-start gap-3.5 rounded-lg border border-border-subtle bg-surface px-5 py-4">
-              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs text-gold">
-                ✓
-              </span>
-              <p className="text-sm leading-relaxed text-foreground/85">
-                Foreign buyers pay flat{" "}
-                <strong className="text-foreground">8% stamp duty</strong> from
-                1 Jan 2026.
-              </p>
-            </div>
-          </div>
-
-          <p className="mt-6 text-xs tracking-wide text-muted-dim">
-            Source: Stamp Act 1949 [Act 378], First Schedule
-          </p>
-        </div>
-      </section>
-
-      {/* ============================================ */}
-      {/* SECTION 9 — AGENT COMMISSION                 */}
+      {/* SECTION 8 — AGENT COMMISSION                 */}
       {/* ============================================ */}
       <section className="border-t border-border-subtle px-6 py-24">
         <div className="mx-auto max-w-4xl">
@@ -1033,54 +888,7 @@ export default function ProcessPage() {
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 10 — TIMELINE OVERVIEW               */}
-      {/* ============================================ */}
-      <section className="border-t border-border-subtle px-6 py-24">
-        <div className="mx-auto max-w-3xl">
-          <p className="mb-3 text-xs font-medium tracking-[0.3em] uppercase text-gold-dim">
-            Timeline
-          </p>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            Realistic Timeline &mdash; Week by Week
-          </h2>
-          <p className="mb-12 max-w-2xl text-base leading-relaxed text-muted">
-            From listing to full title transfer: 6&ndash;15 months depending on
-            buyer financing and Land Office processing.
-          </p>
-
-          <div className="relative space-y-0">
-            {/* Timeline line */}
-            <div className="absolute top-0 bottom-0 left-[19px] w-px bg-gradient-to-b from-gold/40 via-gold/20 to-transparent sm:left-[23px]" />
-
-            {timelineOverview.map((item, i) => (
-              <div key={i} className="relative flex gap-5 pb-8 sm:gap-6">
-                <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold/30 bg-surface text-[9px] font-bold leading-none text-gold sm:h-12 sm:w-12 sm:text-xs">
-                  {item.week}
-                </div>
-                <div className="pt-1.5 sm:pt-2.5">
-                  <h3 className="mb-1 text-base font-semibold text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-muted">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-4 rounded-lg border border-gold/20 bg-gold/[0.04] p-6">
-            <p className="text-base leading-relaxed text-foreground">
-              <strong className="text-gold">Total: 6&ndash;15 months</strong>{" "}
-              from listing to full title transfer. The widest variable is buyer
-              financing (loan approval) and Land Office registration speed.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================ */}
-      {/* SECTION 11 — LEGAL REFERENCES                */}
+      {/* SECTION 10 — LEGAL REFERENCES                */}
       {/* ============================================ */}
       <section className="border-t border-border-subtle px-6 py-24">
         <div className="mx-auto max-w-5xl">
